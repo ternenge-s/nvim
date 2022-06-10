@@ -1,0 +1,32 @@
+{
+  "suggest.preferCompleteThanJumpPlaceholder":true,
+
+  "coc.preferences.snippetStatusText":"SNIP",
+
+  "coc.preferences.snippetHighlight": true,
+
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown","javascript","javascriptreact","typescript","typescriptreact","json","html","jsx","tsx","less","scss"],
+
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {},
+  "emmet.showSuggestionsAsSnippets": true,
+  "eslint.probe": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact",
+  "html",
+  "vue",
+  "markdown",
+  "json",
+  "css",
+  "less",
+  "scss"
+],
+"eslint.format.enable": true
+}
