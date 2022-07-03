@@ -12,8 +12,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/limelight.vim'
-"Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/nerdtree'
 Plug 'PhilRunninger/nerdtree-visual-selection'
@@ -24,19 +22,15 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf'
 Plug 'dominikduda/vim_es7_javascript_react_snippets'
 Plug 'voldikss/vim-floaterm'
-"Plug 'shmargum/vim-sass-colors'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-"Plug 'mkitt/tabline.vim'
 Plug 'pacha/vem-tabline'
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'psliwka/vim-smoothie'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
-" Plug 'ryanoasis/vim-devicons' Icons without colours
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'kyazdani42/nvim-web-devicons'
 
 
 call plug#end()
@@ -97,7 +91,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set encoding=UTF-8
-
+set nowrap
 
 if has('mouse')
 set mouse=a
@@ -123,12 +117,8 @@ let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='onedark'
-let g:airline#extensions#tabline#enabled = 1 " enable airline tabline
-let g:airline#extensions#tabline#tab_min_count = 2 " only show tabline if tabs are being used (more than 1 tab open)
-let g:airline#extensions#tabline#show_buffers = 1 " do not show open buffers in tabline
-let g:airline#extensions#tabline#show_splits = 0
-
 let g:vem_tabline_multiwindow_mode = 1
+
 
 "let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -191,7 +181,7 @@ let NERDTreeQuitOnOpen=1
 let g:floaterm_keymap_new = '<F7>'
 let g:floaterm_keymap_prev= '<F8>'
 let g:floaterm_keymap_next   = '<F9>'
-let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_keymap_toggle = '<F10>'
 
 let g:floaterm_wintype='split'
 
@@ -234,10 +224,8 @@ nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer
 nmap <silent> <leader>y :NERDTreeFind<cr>
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-inoremap <F11><esc> :NERDTreeToggle<CR>
-nnoremap <F11> :NERDTreeToggle<CR>
+inoremap <F5><esc> :NERDTreeToggle<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
