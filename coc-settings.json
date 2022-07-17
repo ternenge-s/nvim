@@ -28,5 +28,6 @@
   "less",
   "scss"
 ],
-"eslint.format.enable": true
+"eslint.format.enable": true,
+"svelte.enable-ts-plugin": true
 }
