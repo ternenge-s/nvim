@@ -1,11 +1,25 @@
 {
-  "suggest.preferCompleteThanJumpPlaceholder":true,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
 
-  "coc.preferences.snippetStatusText":"SNIP",
+  "coc.preferences.snippetStatusText": "SNIP",
 
   "coc.preferences.snippetHighlight": true,
 
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown","javascript","javascriptreact","typescript","typescriptreact","json","html","jsx","tsx","less","scss"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "html",
+    "jsx",
+    "tsx",
+    "less",
+    "scss",
+    "svelte"
+  ],
 
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
@@ -16,18 +30,25 @@
   "eslint.options": {},
   "emmet.showSuggestionsAsSnippets": true,
   "eslint.probe": [
-  "javascript",
-  "javascriptreact",
-  "typescript",
-  "typescriptreact",
-  "html",
-  "vue",
-  "markdown",
-  "json",
-  "css",
-  "less",
-  "scss"
-],
-"eslint.format.enable": true,
-"svelte.enable-ts-plugin": true
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "css",
+    "less",
+    "scss",
+    "svelte"
+  ],
+  "eslint.format.enable": true,
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.completions.enable": true,
+  "svelte.plugin.svelte.codeActions.enable": true,
+  "svelte.plugin.typescript.definitions.enable": true,
+  "svelte.plugin.css.diagnostics.enable": true,
+  "svelte.plugin.svelte.format.enable": true,
+  "svelte.plugin.svelte.hover.enable": true
 }
